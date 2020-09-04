@@ -35,7 +35,7 @@ if grade1 == 'F':
   print(f"Grade point for course is: {grade1} ")
 
 # User input for course 2
-grade2 = input("Enter course 2 letter grade:")
+grade2 = input("Enter course 2 letter grade: ")
 credit2 = input("Enter your course 2 credit: ")
 credit2 = int(credit2)
 
