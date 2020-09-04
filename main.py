@@ -33,6 +33,9 @@ if grade1 == 'D':
 if grade1 == 'F':
   grade1 = float(0.0)
   print(f"Grade point for course 1 is: {grade1} ")
+if grade1 != 'A' or grade1 != 'A-' or grade1 != 'B+' or grade1 != 'B' or grade1 != 'B-' or grade1 != 'C+' or grade1 != 'C' or grade1 != 'D' or grade1 != 'F':
+  grade1 = float(0.0)
+  print(f"Grade point for course 3 is: {grade1} ")
 
 # User input for course 2
 grade2 = input("Enter your course 2 letter grade: ")
@@ -67,6 +70,9 @@ if grade2 == 'D':
 if grade2 == 'F':
   grade2 = float(0.0)
   print(f"Grade point for course 2 is: {grade2} ")
+if grade2 != 'A' or grade2 != 'A-' or grade2 != 'B+' or grade2 != 'B' or grade2 != 'B-' or grade2 != 'C+' or grade2 != 'C' or grade2 != 'D' or grade2 != 'F':
+  grade2 = float(0.0)
+  print(f"Grade point for course 3 is: {grade2} ")
 
 # User input for course 3
 grade3 = input("Enter your course 3 letter grade: ")
@@ -101,8 +107,9 @@ if grade3 == 'D':
 if grade3 == 'F':
   grade3 = float(0.0)
   print(f"Grade point for course 3 is: {grade3} ")
-  grade1 = float(grade1)
-  grade2 = float(grade2)
+if grade3 != 'A' or grade3 != 'A-' or grade3 != 'B+' or grade3 != 'B' or grade3 != 'B-' or grade3 != 'C+' or grade3 != 'C' or grade3 != 'D' or grade3 != 'F':
+  grade3 = float(0.0)
+  print(f"Grade point for course 3 is: {grade3} ")
 
 # Calculating GPA
 GPA = float(grade1 * credit1 + grade2 * credit2 + grade3 * credit3) / (credit1 + credit2 + credit3)
