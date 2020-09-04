@@ -1,7 +1,7 @@
 # Author: Dymea Schippers dxs5940@psu.edu
 
 # User input for course 1
-grade1 = input("Enter course 1 letter grade: ")
+grade1 = input("Enter your course 1 letter grade: ")
 credit1 = input("Enter your course 1 credit: ")
 credit1 = int(credit1)
 
@@ -35,7 +35,7 @@ if grade1 == 'F':
   print(f"Grade point for course 1 is: {grade1} ")
 
 # User input for course 2
-grade2 = input("Enter course 2 letter grade: ")
+grade2 = input("Enter your course 2 letter grade: ")
 credit2 = input("Enter your course 2 credit: ")
 credit2 = int(credit2)
 
@@ -69,7 +69,7 @@ if grade2 == 'F':
   print(f"Grade point for course 2 is: {grade2} ")
 
 # User input for course 3
-grade3 = input("Enter course 3 letter grade: ")
+grade3 = input("Enter your course 3 letter grade: ")
 credit3 = input("Enter your course 3 credit: ")
 credit3 = int(credit3)
 
