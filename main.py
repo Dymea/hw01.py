@@ -1,115 +1,43 @@
 # Author: Dymea Schippers dxs5940@psu.edu
 
-# User input for course 1
-grade1 = input("Enter your course 1 letter grade: ")
-credit1 = input("Enter your course 1 credit: ")
-credit1 = int(credit1)
+def getGradePoint(coursegrade):
+  if coursegrade == "A":
+    return 4.0
+  elif coursegrade == "A-":
+    return 3.67
+  elif coursegrade == "B+":
+    return 3.33
+  elif coursegrade == "B":
+    return 3.0
+  elif coursegrade == "B-":
+    return 2.67
+  elif coursegrade == "C+":
+    return 2.33
+  elif coursegrade == "C":
+    return 2.0
+  elif coursegrade == "D":
+    return 1.0
+  else:
+    return 0.0
 
-# Calculating grade point for course letter grade 1
-if  grade1 == 'A':
-  grade1 = float(4.0)
-  print(f"Grade point for course 1 is: {grade1} ")
-elif grade1 == 'A-':
-  grade1 = float(3.67)
-  print(f"Grade point for course 1 is: {grade1} ")
-elif grade1 == 'B+':
-  grade1 = float(3.33)
-  print(f"Grade point for course 1 is: {grade1} ")
-elif grade1 == "B":
-  grade1 = float(3.0)
-  print(f"Grade point for course 1 is: {grade1} ")
-elif grade1 == "B-":
-  grade1 = float(2.67)
-  print(f"Grade point for course 1 is: {grade1} ")
-elif grade1 == 'C+':
-  grade1 = float(2.33)
-  print(f"Grade point for course 1 is: {grade1} ")
-elif grade1 == 'C':
-  grade1 = float(2.0)
-  print(f"Grade point for course 1 is: {grade1} ")
-elif grade1 == 'D':
-  grade1 = float(1.0)
-  print(f"Grade point for course 1 is: {grade1} ")
-elif grade1 == 'F':
-  grade1 = float(0.0)
-  print(f"Grade point for course 1 is: {grade1} ")
-else:
-  grade1 = float(0.0)
-  print(f"Grade point for course 1 is: {grade1} ")
+def run():
+  coursegrade1 = input("Enter your course 1 letter grade: ")
+  course1credit = float(input("Enter your course 1 credit: "))
+  gradepoint1 = getGradePoint(coursegrade1)
+  print(f"Grade point for course 1 is: {getGradePoint(coursegrade1)}")
+  coursegrade2 = input("Enter your course 2 letter grade: ")
+  course2credit = float(input("Enter your course 2 credit: "))
+  gradepoint2 = getGradePoint(coursegrade2)
+  print(f"Grade point for course 2 is: {getGradePoint(coursegrade2)}")
+  coursegrade3 = input("Enter your course 3 letter grade: ")
+  course3credit = float(input("Enter your course 3 credit: "))
+  gradepoint3 = getGradePoint(coursegrade3)
+  print(f"Grade point for course 3 is: {getGradePoint(coursegrade3)}")
 
-# User input for course 2
-grade2 = input("Enter your course 2 letter grade: ")
-credit2 = input("Enter your course 2 credit: ")
-credit2 = int(credit2)
+  GPA = (gradepoint1 * course1credit + gradepoint2 * course2credit + gradepoint3 *course3credit) / (course1credit + course2credit + course3credit)
 
-# Calculating grade point for course letter grade 2
-if grade2 == 'A':
-  grade2 = float(4.0)
-  print(f"Grade point for course 2 is: {grade2} ")
-elif grade2 == 'A-':
-  grade2 = float(3.67)
-  print(f"Grade point for course 2 is: {grade2} ")
-elif grade2 == 'B+':
-  grade2 = float(3.33)
-  print(f"Grade point for course 2 is: {grade2} ")
-elif grade2 == "B":
-  grade2 = float(3.0)
-  print(f"Grade point for course 2 is: {grade2} ")
-elif grade2 == "B-":
-  grade2 = float(2.67)
-  print(f"Grade point for course 2 is: {grade2} ")
-elif grade2 == 'C+':
-  grade2 = float(2.33)
-  print(f"Grade point for course 2 is: {grade2} ")
-elif grade2 == 'C':
-  grade2 = float(2.0)
-  print(f"Grade point for course 2 is: {grade2} ")
-elif grade2 == 'D':
-  grade2 = float(1.0)
-  print(f"Grade point for course 2 is: {grade2} ")
-elif grade2 == 'F':
-  grade2 = float(0.0)
-  print(f"Grade point for course 2 is: {grade2} ")
-else:
-  grade2 = float(0.0)
-  print(f"Grade point for course 2 is: {grade2} ")
+  print("Your GPA is", GPA)
 
-# User input for course 3
-grade3 = input("Enter your course 3 letter grade: ")
-credit3 = input("Enter your course 3 credit: ")
-credit3 = int(credit3)
+if __name__ == "__main__":
+  run()
 
-# Calculating grade point for course letter grade 3
-if grade3 == 'A':
-  grade3 = float(4.0)
-  print(f"Grade point for course 3 is: {grade3} ")
-elif grade3 == 'A-':
-  grade3 = float(3.67)
-  print(f"Grade point for course 3 is: {grade3} ")
-elif grade3 == 'B+':
-  grade3 = float(3.33)
-  print(f"Grade point for course 3 is: {grade3} ")
-elif grade3 == "B":
-  grade3 = float(3.0)
-  print(f"Grade point for course 3 is: {grade3} ")
-elif grade3 == "B-":
-  grade3 = float(2.67)
-  print(f"Grade point for course 3 is: {grade3} ")
-elif grade3 == 'C+':
-  grade3 = float(2.33)
-  print(f"Grade point for course 3 is: {grade3} ")
-elif grade3 == 'C':
-  grade3 = float(2.0)
-  print(f"Grade point for course 3 is: {grade3} ")
-elif grade3 == 'D':
-  grade3 = float(1.0)
-  print(f"Grade point for course 3 is: {grade3} ")
-elif grade3 == 'F':
-  grade3 = float(0.0)
-  print(f"Grade point for course 3 is: {grade3} ")
-else:
-  grade3 = float(0.0)
-  print(f"Grade point for course 3 is: {grade3} ")
-
-# Calculating GPA
-print(f"Your GPA is: {(grade1 * credit1 + grade2 * credit2 + grade3 * credit3) / (credit1 + credit2 + credit3)}")
